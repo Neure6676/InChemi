@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c505065e-36a3-4380-9bcc-1ea24bbda1eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/audit/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/constants/AccountsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/exception/CustomerAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/mapper/AccountsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/mapper/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/service/IAccountsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/service/impl/AccountsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/org/threeam/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/org/threeam/dto/AccountsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/dto/AccountsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/org/threeam/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/dto/CustomerDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/org/threeam/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/org/threeam/repository/AccountsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/repository/AccountsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/src/main/java/org/threeam/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/java/org/threeam/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/target/classes/org/threeam/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/account/target/classes/org/threeam/controller/AccountController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +28,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2cZ3YQ4BdMTWe17CG5p6xtcBruP" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,30 +40,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhenyuanzhang/Desktop/inchemi/molecule/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/molecule/src/main/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.threeam.repository" />
     </key>
@@ -119,7 +109,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708305323233</updated>
-      <workItem from="1708305326524" duration="17063000" />
+      <workItem from="1708305326524" duration="21373000" />
+      <workItem from="1708391166960" duration="10000" />
+      <workItem from="1708568703661" duration="1200000" />
+      <workItem from="1708642923113" duration="9000" />
     </task>
     <servers />
   </component>
