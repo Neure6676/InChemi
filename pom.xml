@@ -18,7 +18,7 @@
 	<modules>
 		<module>account</module>
 		<module>molecule</module>
-		<module>data</module>
+		<module>repository</module>
 		<module>common</module>
 		<module>gateway</module>
 	</modules>
