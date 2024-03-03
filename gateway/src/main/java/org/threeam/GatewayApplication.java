@@ -22,7 +22,12 @@ public class GatewayApplication {
                         .path("/inchemi/account/**")
                         .filters( f -> f.rewritePath("/inchemi/account/(?<segment>.*)","/${segment}")
                                 .addResponseHeader("InChemi-Response-Time", LocalDateTime.now().toString()))
-                        .uri("lb://ACCOUNT")).build();
+                        .uri("lb://ACCOUNT"))
+                .route(p -> p
+                        .path("/inchemi/molecule/**")
+                        .filters( f -> f.rewritePath("/inchemi/molecule/(?<segment>.*)","/${segment}")
+                                .addResponseHeader("InChemi-Response-Time", LocalDateTime.now().toString()))
+                        .uri("lb://MOLECULE")).build();
     }
 
 }
