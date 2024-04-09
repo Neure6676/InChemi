@@ -23,27 +23,23 @@ public class MoleculeController {
     private IMoleculeService iMoleculeService;
 
     @PostMapping("/create")
-    public ResponseEntity<ResponseDto> createMolecule(@RequestParam
-                                                  String customerId) {
-        iMoleculeService.createMolecule(customerId);
+    public ResponseEntity<ResponseDto> createMolecule(@Valid @RequestBody MoleculeDto moleculeDto) {
+        iMoleculeService.createMolecule(moleculeDto);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(new ResponseDto(MoleculeConstants.STATUS_201, MoleculeConstants.MESSAGE_201));
     }
 
     @GetMapping("/fetch")
-    public ResponseEntity<MoleculeDto> fetchMoleculeDetails(@RequestParam
-                                                     String inchi) {
-        MoleculeDto moleculeDto = iMoleculeService.fetchMolecule(inchi);
-        return ResponseEntity.status(HttpStatus.OK).body(moleculeDto);
+    public ResponseEntity<List<MoleculeDto>> fetchAllMolecules(@RequestParam String accountId) {
+        List<MoleculeDto> moleculeDtoList = iMoleculeService.fetchAllMolecules(accountId);
+        return ResponseEntity.status(HttpStatus.OK).body(moleculeDtoList);
     }
 
-    // TODO fetchMoleculeByPage
-    @GetMapping("/fetch_all")
-    public ResponseEntity<List<MoleculeDto>> fetchMoleculeByPage(@RequestParam
-                                                            String customerId) {
-        List<MoleculeDto> moleculePage = iMoleculeService.fetchMoleculeByPage(customerId);
-        return ResponseEntity.status(HttpStatus.OK).body(moleculePage);
+    @GetMapping("/fetch_detail")
+    public ResponseEntity<MoleculeDto> fetchMoleculeDetail(@RequestParam Long moleculeId) {
+        MoleculeDto moleculeDto = iMoleculeService.fetchMoleculeDetail(moleculeId);
+        return ResponseEntity.status(HttpStatus.OK).body(moleculeDto);
     }
 
     @PutMapping("/update")
@@ -61,9 +57,8 @@ public class MoleculeController {
     }
 
     @DeleteMapping("/delete")
-    public ResponseEntity<ResponseDto> deleteLoanDetails(@RequestParam
-                                                         String inchi) {
-        boolean isDeleted = iMoleculeService.deleteMolecule(inchi);
+    public ResponseEntity<ResponseDto> deleteLoanDetails(@RequestParam Long moleculeId) {
+        boolean isDeleted = iMoleculeService.deleteMolecule(moleculeId);
         if(isDeleted) {
             return ResponseEntity
                     .status(HttpStatus.OK)

@@ -5,7 +5,7 @@ spring:
   application:
     name: account
   datasource:
-    url: jdbc:mysql://localhost:3306/account
+    url: jdbc:mysql://172.31.18.111:3306/account
     username: root
     password: root
   jpa:
@@ -35,7 +35,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://172.31.18.111:8070/eureka/
 
 info:
   app:

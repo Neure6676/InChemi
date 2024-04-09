@@ -18,11 +18,17 @@ public class Molecule extends BaseEntity{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long moleculeId;
 
-    private Long customerId;
+    private String accountId;
 
-    private String s3Location;
+    private String moleculeName;
 
-    private String formula;
+    private String moleculeFormula;
 
-    private String inchi;
+    private String moleculeDescription;
+
+    private String moleculeInchi;
+
+    private String imgUrl;
+
+    private Long moleculeDetailId;
 }

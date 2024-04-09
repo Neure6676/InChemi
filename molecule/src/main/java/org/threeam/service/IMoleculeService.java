@@ -1,19 +1,17 @@
 package org.threeam.service;
 
-import org.springframework.stereotype.Service;
 import org.threeam.dto.MoleculeDto;
 
 import java.util.List;
 
-@Service
 public interface IMoleculeService {
-    void createMolecule(String customerId);
+    void createMolecule(MoleculeDto moleculeDto);
 
-    MoleculeDto fetchMolecule(String inchi);
+    List<MoleculeDto> fetchAllMolecules(String accountId);
+
+    MoleculeDto fetchMoleculeDetail(Long moleculeId);
 
     boolean updateMolecule(MoleculeDto moleculeDto);
 
-    boolean deleteMolecule(String inchi);
-
-    List<MoleculeDto> fetchMoleculeByPage(String customerId);
+    boolean deleteMolecule(Long moleculeId);
 }

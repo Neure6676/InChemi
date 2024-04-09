@@ -18,7 +18,9 @@ public class Group extends BaseEntity{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long groupId;
 
-    private Long customerId;
+    private Long accountId;
 
     private String groupName;
+
+    private String groupDescription;
 }

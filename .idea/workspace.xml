@@ -5,13 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c505065e-36a3-4380-9bcc-1ea24bbda1eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/org/threeam/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eurekaserver/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/audit/AuditAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/mapper/MoleculeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/account/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/org/threeam/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/org/threeam/GatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/target/classes/org/threeam/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/org/threeam/GatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/controller/MoleculeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/controller/MoleculeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/GroupDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/GroupDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/MoleculeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/MoleculeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/MoleculeGroupingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/MoleculeGroupDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/entity/Molecule.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/entity/Molecule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/entity/MoleculeGrouping.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/entity/MoleculeGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/repository/MoleculeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/repository/MoleculeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/service/IMoleculeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/service/IMoleculeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/service/impl/MoleculeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/service/impl/MoleculeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +76,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/Users/zhenyuanzhang/Desktop/inchemi/eurekaserver/src/main/resources",
+    "last_opened_file_path": "/Users/zhenyuanzhang/Desktop/inchemi/gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,12 +94,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/eurekaserver/src/main/resources" />
+      <recent name="$PROJECT_DIR$/gateway" />
+      <recent name="$PROJECT_DIR$/molecule" />
       <recent name="$PROJECT_DIR$/molecule/src/main/java/org/threeam" />
+      <recent name="$PROJECT_DIR$/eurekaserver/src/main/resources" />
       <recent name="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto" />
-      <recent name="$PROJECT_DIR$/molecule/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.threeam.audit" />
       <recent name="org.threeam.entity" />
       <recent name="" />
       <recent name="org.threeam.repository" />
@@ -175,11 +197,33 @@
       <workItem from="1708916672635" duration="4181000" />
       <workItem from="1709261664021" duration="1439000" />
       <workItem from="1709264219267" duration="855000" />
-      <workItem from="1709328389637" duration="19617000" />
+      <workItem from="1709328389637" duration="38505000" />
+      <workItem from="1709927756166" duration="18000" />
+      <workItem from="1710967392464" duration="505000" />
+      <workItem from="1711924517409" duration="699000" />
+      <workItem from="1712108377879" duration="700000" />
+      <workItem from="1712167862615" duration="23000" />
+      <workItem from="1712178449150" duration="1782000" />
+      <workItem from="1712426309381" duration="13821000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
