@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 172.31.26.13
   client:
     fetchRegistry: false
     registerWithEureka: false
