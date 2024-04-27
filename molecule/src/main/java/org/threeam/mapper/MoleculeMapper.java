@@ -13,6 +13,7 @@ public class MoleculeMapper {
         }
 
         MoleculeDto dto = new MoleculeDto();
+        dto.setMoleculeId(molecule.getMoleculeId());
         dto.setAccountId(molecule.getAccountId());
         dto.setMoleculeName(molecule.getMoleculeName());
         dto.setMoleculeFormula(molecule.getMoleculeFormula());

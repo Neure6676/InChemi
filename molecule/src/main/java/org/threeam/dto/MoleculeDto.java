@@ -6,6 +6,8 @@ import lombok.Data;
 @Data
 public class MoleculeDto {
 
+    private Long moleculeId;
+
     @NotEmpty(message = "Account id can not be a null or empty")
     private String accountId;
 
