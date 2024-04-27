@@ -4,9 +4,9 @@ spring:
   application:
     name: molecule
   datasource:
-    url: jdbc:mysql://database-inchemi-rds.c5y4yoqk6ucv.us-east-2.rds.amazonaws.com:3306/molecule
-    username: admin
-    password: root0000
+    url: jdbc:mysql://18.218.70.221:3306/molecule
+    username: root
+    password: root
   jpa:
     show-sql: true
     properties:

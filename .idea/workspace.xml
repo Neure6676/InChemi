@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c505065e-36a3-4380-9bcc-1ea24bbda1eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/MoleculeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/dto/MoleculeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/mapper/MoleculeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/java/org/threeam/mapper/MoleculeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/molecule/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/molecule/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/molecule/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +184,7 @@
       <workItem from="1712627092219" duration="258000" />
       <workItem from="1712851482863" duration="9000" />
       <workItem from="1712943299947" duration="10000" />
-      <workItem from="1714236879212" duration="970000" />
+      <workItem from="1714236879212" duration="8965000" />
     </task>
     <servers />
   </component>

@@ -18,8 +18,7 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      #defaultZone: http://172.31.18.111:8070/eureka/
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://18.218.70.221:8070/eureka/
 
 info:
   app:
